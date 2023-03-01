@@ -1,0 +1,40 @@
+$color: #0120ff;
+$hover-color: #018dff;
+// var for any element has flex and direction: row and justify center style
+%flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
+// for any element has justify center and align center style 
+%jus-ali {
+    justify-content: center;
+    align-items: center;
+}
+// for any element has flex and direction: colomn style
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+// for scrl color 
+$srcl-color: (
+    "html": rgb(255, 105, 53),
+    "css": #7eb5ed,
+    "js": #ffef96,
+    "react": #abedff,
+    "node": #b2d65a,
+    "boot": #d28fff,
+    "php": #7eb5ed,
+);
+
+// for the exp's border and icon color 
+$exp-brdr-icon-color: (
+    "html": rgb(255, 105, 53),
+    "css": $color,
+    "js": #fddb22,
+    "react": #abedff,
+    "node": #b2d65a,
+    "boot": #9901ff,
+    "php": $color,
+);

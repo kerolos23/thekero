@@ -1,0 +1,23 @@
+@mixin loading ($bg-color) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background-color: $bg-color;
+}
+
+@mixin animation ($name, $size) {
+    @keyframes #{$name} {
+        0%{
+            width: 0;
+        }
+        100%{
+            width: $size;
+        }
+    }
+}

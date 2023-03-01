@@ -1,0 +1,10 @@
+@use "./var" as *;
+
+/// @param{color, size};
+/// size for the font size
+/// color for the color hover 
+/// this mixin for hover on media
+@mixin hover-media($color, $size){
+    color: $color;
+    font-size: $size;
+}

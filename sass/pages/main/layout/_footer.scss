@@ -1,0 +1,47 @@
+@use "./helper/var" as *;
+@use "./helper/mixin" as *; 
+.foot{
+    display: flex;
+    background: #222;
+    width: 100%;
+    height: 4em;
+    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    p{
+        font-size: 1.2em;
+        font-weight: 700;
+        cursor: default;
+        color: $color;
+        span:nth-child(1){
+            color: #018dff;
+            font-family: 'Babylonica', cursive;
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-right: 0.2em;
+            cursor: default;
+        }
+        span:nth-child(2),
+        span:nth-child(3){
+            color: #000;
+            font-weight: 700;
+            font-size: .8em;
+            cursor: default;
+        }
+    }
+}
+.links-foot {
+    padding-right: 15px;
+    display: flex;
+    gap: 0.4em;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    a{
+        color: $color;
+        transition: 1s ease;
+        &:hover {
+            @include hover-media($hover-color, 1.72em);
+        }
+    }
+}

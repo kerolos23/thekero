@@ -1,0 +1,85 @@
+@use "./helper/var" as *;
+.countien{
+    @extend %flex-row-center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 3em;
+    gap: 1.5em;
+}
+.exp-card { 
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 17.99em;
+    height: 20em;
+    border-radius: 1em;
+    padding: 0.5em;
+    background: linear-gradient(-33deg,#000 50%,#141414 50%);
+    align-items: center;
+    border-top: 0.5em solid;
+    border-bottom: 0.5em solid;
+    position: relative;
+    opacity: 0;
+    transition: 3s ease;
+    @each $name, $color in $exp-brdr-icon-color {
+        &.#{$name}-border {
+            border-color: $color;
+        }
+    }
+    & svg {
+        display: flex;
+        justify-content: center;
+    }
+}
+.exp-icon{
+    @extend %flex-row-center;
+    align-items: center;
+    width: 100%;
+    margin: 1.2em;
+    font-size: 1.3em;
+    h2 {
+        margin-right: 1em;
+    }
+    .icons-size{
+        font-size: 1.7em;
+        animation: rotate-vert-center 3.5s cubic-bezier(.455,.03,.515,.955) infinite both;
+        @each $name, $color in $exp-brdr-icon-color {
+            &.#{$name}-icon {
+                color: $color;
+            }
+        }
+        @keyframes rotate-vert-center {
+            0%,100% {
+                transform: none;
+            }
+            50% {
+                transform: rotate3d(0, 1, 0, -180deg);    
+            }
+        }
+    }
+}
+.srcl {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: inherit;
+    left: 0;
+    top: 0;
+    align-items: center;
+    padding-top: 1.5em;
+    @each $name, $color in $exp-brdr-icon-color {
+        &.scrl_color_#{$name} {
+            color: $color;
+        }
+    }
+}
+.circle_progressCircleBar{
+    transform: rotate(-90deg);
+    transform-origin: 49% 44.7%;
+}

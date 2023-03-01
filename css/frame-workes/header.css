@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000;
+    overflow: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    width: 100%;
+    background-color: #000;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    padding: 10px 150px;
+}
+.all{
+    font-weight: 600;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 20px ;
+    transition: 1s ease;
+    position: relative;
+}
+.all::before {
+    content: "";
+    background-color: #0120ff;
+    position: absolute;
+    transition: .5s ease;
+    width: 1.6em;
+    height: 0.1em;
+    bottom: -6px;
+    opacity: 0;
+}
+.ab::before {
+    right: 16%;
+}
+.ab:hover::before {
+    opacity: 1;
+}
+.sk::before {
+    right: 12%;
+}
+.sk:hover::before {
+    opacity: 1;
+}
+.pr::before {
+    right: 25%;
+}
+.pr:hover::before {
+    opacity: 1;
+}
+.ce::before {
+    right: 31%;
+}
+.ce:hover::before {
+    opacity: 1;
+}
+.co::before {
+    right: 20%;
+}
+.co:hover::before {
+    opacity: 1;
+}
+
+.all:hover{
+    color: #0120ff;
+}
+.header .p a{
+    color: #0120ff;
+    font-size: 1.875em;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}

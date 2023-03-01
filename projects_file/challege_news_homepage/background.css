@@ -1,0 +1,68 @@
+
+.before{
+    position: absolute;
+    font-size: 5em;
+    font-weight: 900;
+    line-height: 19px;
+    color: skyblue;
+    transform: translate(-14px, 436px);
+    cursor: context-menu;
+}
+
+.top{
+    position: absolute;
+    font-size: 5em;
+    font-weight: 200;
+    transform: translate(863px, -20px);
+    color: pink;
+    font-family: 'Fredoka One', cursive;
+    cursor: context-menu;
+}
+
+
+.after{
+
+    transform: translate(1223.4px, 300px);
+    width: 126px;
+    min-height: 50px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    cursor: context-menu;
+}
+
+.one{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: pink;
+    border-left: transparent;
+    border-top: transparent;
+    transform: skew(-44deg, 44deg) translate(6px, -7px);
+}
+
+.two{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: pink;
+    border-left: transparent;
+    border-top: transparent;
+    transform: skew(-44deg, 44deg) translate(31px, -32.5px);
+}
+
+.three{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: pink;
+    border-right: transparent;
+    border-left: transparent;
+    border-top: transparent;
+    transform: skew(-44deg, 44deg) translate(56px, -58px);
+}
